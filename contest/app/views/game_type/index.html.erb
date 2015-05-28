@@ -1,0 +1,9 @@
+<html>
+      <% if !@games.blank? %>
+        <% for game in @games %>
+          <%= button_to game.name, game_url(id: game.id), :id => "open-contacts-dialog-btn",:class => "inbox-sf-add-btn tip", :method => :get %>
+        <% end %>
+      <% end %>
+	
+	<%= button_to "Atrás", dice_url, :id => "open-contacts-dialog-btn",:class => "inbox-sf-add-btn tip", :method => :get %>
+<html>

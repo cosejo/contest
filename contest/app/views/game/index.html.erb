@@ -1,0 +1,6 @@
+<html>
+	<%= @game.name %>
+	<%= @game.description %>
+	<%= button_to "Atrás", game_type_url(id: @game.game_type_id), :id => "open-contacts-dialog-btn",
+      :class => "inbox-sf-add-btn tip", :method => :get %>
+<html>
