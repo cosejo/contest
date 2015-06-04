@@ -1,12 +1,20 @@
 <html>
-      <% if !@games.blank? %>
-        <% for game in @games %>
-        <div class="game-type-background-border btn-success">
-        	<%= link_to game.name, game_url(id: game.id), :id => "game-type-#{game.id}",:class => "game-type-link", :method => :get %>
-        </div>
-        <% end %>
-      <% end %>
-
-		<%= button_to "Atrás", dice_url, :id => "open-contacts-dialog-btn",
-      :class => "btn btn-primary btn-lg btn-block back-button", :method => :get %>
+	<div class="container-fluid">
+  		<div class="row">
+			<% if !@games.blank? %>
+		        <% for game in @games %>
+		        	<div class="col-md-2">
+				        	<div class="game-type-background-border btn-success">
+				        		<%= link_to game.name, game_url(id: game.id), :id => "game-type-#{game.id}",:class => "game-type-link", :method => :get %>
+				        	</div>
+		        	</div>
+		        <% end %>
+		    <% end %>
+  		</div>
+		<div class="row">
+			<div class="col-md-16">
+  				<%= button_to "Atrás", dice_url, :id => "open-contacts-dialog-btn",:class => "btn btn-primary bt-lg btn-block back-button", :method => :get %>
+  			</div>
+  		</div>
+	</div>
 <html>

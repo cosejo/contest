@@ -8,8 +8,9 @@
 	background-color: blue;
 	border: solid 10px white;
 	border-radius: 50px;
-	float:left;
 	overflow: hidden;
+  position: relative;
+  margin: 0 auto;
 }
 
 .game-type-link{
