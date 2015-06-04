@@ -1,6 +1,18 @@
 <html>
-	<%= @game.name %>
-	<%= @game.description %>
-	<%= button_to "Atrás", game_type_url(id: @game.game_type_id), :id => "open-contacts-dialog-btn",
-      :class => "inbox-sf-add-btn tip", :method => :get %>
+	
+  <div id="wrap">
+        <h2 class="sub-header"></h2>
+          <div class="container">
+              <div class="alert-container">
+              </div>
+          		<div class="panel panel-success">
+          			<div id="song-name" class="panel-heading"><%= @game.name %></div>
+          			<div id="song-lyrics" class="panel-body">
+          				<%= @game.description %>
+          			</div>
+          		</div>
+          </div>
+          	<%= button_to "Atrás", game_type_url(id: @game.game_type_id), :id => "open-contacts-dialog-btn",
+      :class => "btn btn-primary btn-lg btn-block back-button", :method => :get %>
+  </div>
 <html>

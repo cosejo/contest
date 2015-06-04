@@ -1,10 +1,6 @@
 <html>
-	<%= button_to "Throw", game_type_url(id: 1), :id => "open-contacts-dialog-btn",
-      :class => "inbox-sf-add-btn tip", :method => :get %>
-
-      <% if !@game_types.blank? %>
-        <% for type in @game_types %>
-          <%= button_to type.name, game_type_url(id: type.id), :id => "open-contacts-dialog-btn",:class => "inbox-sf-add-btn tip", :method => :get %>
-        <% end %>
-      <% end %>
+    <div class="throw-button-container">
+      	<%= button_to "Lanzar", dice_throw_url(), :id => "open-contacts-dialog-btn",
+      :class => "btn btn-2 btn-2i", :method => :get %>
+  </div>
 <html>

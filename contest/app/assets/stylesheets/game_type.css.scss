@@ -1,3 +1,29 @@
 // Place all the styles related to the gameType controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.game-type-background-border{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	border: solid 10px white;
+	border-radius: 50px;
+	float:left;
+	overflow: hidden;
+}
+
+.game-type-link{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: 25% auto;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inherit;
+}
+
+.game-type-link:hover{
+  text-decoration: none;
+  color: #555;
+}

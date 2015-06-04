@@ -5,5 +5,6 @@ class DiceController < ApplicationController
 	end
 
 	def throw
+		redirect_to game_type_url(id:1 + rand(4))
 	end
 end

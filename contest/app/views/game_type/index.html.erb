@@ -1,9 +1,12 @@
 <html>
       <% if !@games.blank? %>
         <% for game in @games %>
-          <%= button_to game.name, game_url(id: game.id), :id => "open-contacts-dialog-btn",:class => "inbox-sf-add-btn tip", :method => :get %>
+        <div class="game-type-background-border btn-success">
+        	<%= link_to game.name, game_url(id: game.id), :id => "game-type-#{game.id}",:class => "game-type-link", :method => :get %>
+        </div>
         <% end %>
       <% end %>
-	
-	<%= button_to "Atrás", dice_url, :id => "open-contacts-dialog-btn",:class => "inbox-sf-add-btn tip", :method => :get %>
+
+		<%= button_to "Atrás", dice_url, :id => "open-contacts-dialog-btn",
+      :class => "btn btn-primary btn-lg btn-block back-button", :method => :get %>
 <html>

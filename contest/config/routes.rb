@@ -7,9 +7,8 @@ Rails.application.routes.draw do
   root 'dice#index'
 
   get '/' => 'dice#index', as: :dice
-
+  get 'dice/throw' => 'dice#throw', as: :dice_throw
   get 'game_type/:id' => 'game_type#index', as: :game_type
-
   get 'game/:id' => 'game#index', as: :game
 
   # Example of regular route:
