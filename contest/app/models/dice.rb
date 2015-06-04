@@ -6,7 +6,8 @@ class Dice < ActiveRecord::Base
 		while throw_value == last_value
 			throw_value = rand(1..range)
 		end
-		last_value = throw_value
+		self.last_value = throw_value
+		self.save
 		throw_value
 	end
 end
