@@ -1,10 +1,12 @@
 class Dice < ActiveRecord::Base
-	
-	@last_value
-	@range
-
+	attr_accessible  :last_value, :range
 
 	def throw
-		rand(0..range)
+		throw_value = rand(1..range)
+		while throw_value == last_value
+			throw_value = rand(1..range)
+		end
+		last_value = throw_value
+		throw_value
 	end
 end

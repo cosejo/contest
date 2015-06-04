@@ -1,10 +1,11 @@
 class DiceController < ApplicationController
 	
+	@@dice = Dice.all().first
+
 	def index
-		@game_types = GameType.all()
 	end
 
 	def throw
-		redirect_to game_type_url(id:1 + rand(4))
+		redirect_to game_type_url(id: @@dice.throw)
 	end
 end

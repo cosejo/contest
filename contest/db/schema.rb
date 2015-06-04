@@ -14,6 +14,8 @@
 ActiveRecord::Schema.define(version: 20150528024159) do
 
   create_table "dices", force: true do |t|
+    t.integer  "last_value"
+    t.integer  "range"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

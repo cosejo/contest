@@ -30,3 +30,5 @@
  Game.create(name:"Juego 4.2", description: "SAdssDSA,m", image:'', video:'', game_type_id: 4, diasbled:false)
  Game.create(name:"Juego 4.3", description: "SadsdsavdFrwr", image:'', video:'', game_type_id: 4, diasbled:false)
  Game.create(name:"Juego 4.4", description: "sabgrfDSA", image:'', video:'', game_type_id: 4, diasbled:false)
+
+ Dice.create(last_value: 0, range:4)
