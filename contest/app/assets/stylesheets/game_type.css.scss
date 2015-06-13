@@ -11,9 +11,14 @@
 	overflow: hidden;
   position: relative;
   margin: 0 auto;
+  background-position: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.game-type-link{
+.game-link{
+  position: relative;
+  margin: 0 auto;
   text-decoration: none;
   color: white;
   text-align: center;
@@ -22,9 +27,63 @@
   width: 50px;
   height: 50px;
   display: inherit;
+  font-weight: 700;
+  font-size: x-large;
 }
 
 .game-type-link:hover{
   text-decoration: none;
   color: #555;
+}
+
+.game-disable{
+  background-color: #888 !important;
+  border-color: #999 !important;
+  background-image: none;
+}
+
+.game-type-1{
+  border-color: #000000;
+  background-color: #FEF40D;
+  background-size: 100%;
+  background-position-y: 50%;
+  background-image: image-url("batman_logo.png");
+}
+
+.game-type-2{
+  border-color: #115B1F;
+  background-color: #FFFFFF;
+  background-size: 300%;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  background-image: image-url("green_lantern_logo.png");
+}
+
+.game-type-3{
+  border-color: #90001B;
+  background-color: #FFFFFF;
+  background-image: image-url("the_flash_logo.png");
+}
+
+.game-type-4{
+  border-color: #BB1020;
+  background-color: #191970;
+  background-image: image-url("captain_america_logo.png");
+}
+
+.game-type-1 .game-link{
+  color: #BBBBBB;
+}
+
+.game-type-2 .game-link{
+  /*color: #115B1F;*/
+  color: #555;
+}
+
+.game-type-3 .game-link{
+  color: #90001B;
+}
+
+.game-type-4 .game-link{
+  color: #BB1020;
 }

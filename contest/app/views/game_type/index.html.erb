@@ -4,8 +4,8 @@
 			<% if !@games.blank? %>
 		        <% for game in @games %>
 		        	<div class="col-md-2">
-				        	<div class="game-type-background-border btn-success">
-				        		<%= link_to game.name, game_url(id: game.id), :id => "game-type-#{game.id}",:class => "game-type-link", :method => :get %>
+				        	<div class="game-type-background-border <%= get_game_disable_css_class(game.disabled) %> game-type-<%= game.game_type_id %>">
+				        		<%= link_to game.id, game_url(id: game.id), :id => "game-#{game.id}",:class => "game-link", :method => :get %>
 				        	</div>
 		        	</div>
 		        <% end %>
