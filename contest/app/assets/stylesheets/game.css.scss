@@ -1,3 +1,14 @@
 // Place all the styles related to the game controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.song-container{	
+  background-color: transparent !important;
+}
+
+#song-lyrics{	
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
