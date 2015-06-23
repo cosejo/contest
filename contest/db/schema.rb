@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150528024159) do
+ActiveRecord::Schema.define(version: 20150623042342) do
 
   create_table "dices", force: true do |t|
     t.integer  "last_value"
@@ -34,6 +34,14 @@ ActiveRecord::Schema.define(version: 20150528024159) do
     t.string   "video"
     t.integer  "game_type_id"
     t.boolean  "disabled"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "teams", force: true do |t|
+    t.string   "name"
+    t.integer  "points"
+    t.boolean  "keys"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

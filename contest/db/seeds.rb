@@ -6,6 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+ Team.create(name:"Batman",points:0,keys:20)
+ Team.create(name:"Linterna Verde",points:0,keys:20)
+ Team.create(name:"Flash",points:0,keys:20)
+ Team.create(name:"Capitan America",points:0,keys:20)
+
  GameType.create(name: 'ABC', color: 'FF5555')
  GameType.create(name: 'BCD', color: '555555')
  GameType.create(name: 'EFG', color: 'AA55FF')

@@ -12,3 +12,132 @@
   color: white;
   font-size: 20px;
 }
+
+.team-type-background-border{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	border: solid 10px white;
+	border-radius: 50px;
+	overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  background-position: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.team-link{
+  position: relative;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: 25% auto;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inherit;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.team-link:hover{
+  text-decoration: none;
+  color: #555;
+  font-weight: 900;
+}
+
+.team-disable{
+  background-color: #888 !important;
+  border-color: #999 !important;
+  background-image: none;
+}
+
+.team-type-1{
+  border-color: #000000;
+  background-color: #FFFF0D;
+  background-size: 100%;
+  background-position-y: 50%;
+  background-image: image-url("batman_logo.png");
+}
+
+.team-type-1:hover{
+  border-color: #FFFF0D;
+  background-color: #000000;
+  background-image: image-url("batman_hover_logo.png");
+}
+
+.team-type-2{
+  border-color: #115B1F;
+  background-color: #FFFFFF;
+  background-size: 300%;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  background-image: image-url("green_lantern_logo.png");
+}
+
+.team-type-2:hover{
+  border-color: #FFFFFF;
+  background-color: #115B1F;
+  background-size: 40%;
+  background-position-y: 45%;
+  background-image: image-url("green_lantern_hover_logo.png");
+}
+
+.team-type-3{
+  border-color: #90001B;
+  background-color: #FFFFFF;
+  background-image: image-url("the_flash_logo.png");
+}
+
+.team-type-3:hover{
+  border-color: #FFFFFF;
+  background-color: #90001B;
+}
+
+.team-type-4{
+  border-color: #BB1020;
+  background-color: #191970;
+  background-image: image-url("captain_america_logo.png");
+}
+
+.team-type-4:hover{
+  border-color: #191970;
+  background-color: #BB1020;
+  color: #191970 !important;
+}
+
+.team-type-1 .team-link{
+  color: #BBBBBB;
+}
+
+.team-type-1 .team-link:hover{
+  color: #555555;
+}
+
+.team-type-2 .team-link{
+  /*color: #115B1F;*/
+  color: #555;
+}
+
+.team-type-2 .team-link:hover{
+  /*color: #115B1F;*/
+  color: #555;
+}
+
+.team-type-3 .team-link{
+  color: #90001B;
+}
+
+.team-type-3 .team-link:hover{
+  color: #FFFFFF;
+}
+
+.team-type-4 .team-link{
+  color: #BB1020;
+}
+
+.team-type-4 .team-link:hover{
+  color: #191970;
+}

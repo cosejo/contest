@@ -12,6 +12,22 @@
           			</div>
           		</div>
           </div>
+
+    <div class="container-fluid">
+        <div class="row">
+        <% if !@teams.blank? %>
+              <% for team in @teams %>
+                <div class="col-md-3">
+                    <div class="team-type-background-border team-type-<%= team.id %>">
+                      
+                      <%= link_to "", game_url(id: team.id), :id => "team-#{team.id}",:class => "team-link", :method => :get %>
+
+                    </div>
+                </div>
+              <% end %>
+          <% end %>
+        </div>
+      </div>
       
       <%= button_to "Finalizar", game_end_url(id: @game.id), :id => "open-contacts-dialog-btn",
       :class => "btn btn-primary btn-lg btn-block back-button", :method => :get %>
