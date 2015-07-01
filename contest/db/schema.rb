@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20150623042342) do
   create_table "teams", force: true do |t|
     t.string   "name"
     t.integer  "points"
-    t.boolean  "keys"
+    t.integer  "keys"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

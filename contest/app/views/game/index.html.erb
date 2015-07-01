@@ -19,7 +19,7 @@
               <% for team in @teams %>
                 <div class="col-md-3">
                     <div class="team-type-background-border team-type-<%= team.id %>">
-                      <%= link_to "", game_url(id: team.id), :id => "#{team.id}",:class => "team-link", :method => :get %>
+                      <%= link_to "", game_url(id: team.id), :id => "#{team.id}",:class => "team-link team-game-points", :method => :get %>
 
                     </div>
                 </div>

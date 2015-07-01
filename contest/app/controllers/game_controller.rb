@@ -10,6 +10,9 @@ class GameController < ApplicationController
 		for team_info in teams_info
 			team = Team.find(team_info[1]["id"])
 			team.points += team_info[1]["points"].to_i
+			if team_info[1]["points"].to_i == 100
+				team.keys -= 1
+			end
 			team.save
 		end
 		game = Game.find(params[:id])

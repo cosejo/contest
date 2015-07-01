@@ -7,7 +7,7 @@ var MAX_POINTS = 100,
 	TEAM_INDEX = 0;
 
 $( document ).ready(function() {
-    $('.team-link').click(teamLinkOnClick);
+    $('.team-game-points').click(teamLinkOnClick);
     $('#end-game-button').click(endGame);
 });
 
@@ -40,7 +40,7 @@ function endGame(e){
 }
 
 function getTeamsPoints(){
-	teams = $('.team-link');
+	teams = $('.team-game-points');
 	teams_info = [];
 	for (var i = 0; i < teams.length; i++) {
 		team = teams[i];

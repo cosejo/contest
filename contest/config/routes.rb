@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'game_type/:id' => 'game_type#index', as: :game_type
   get 'game/:id' => 'game#index', as: :game
   post 'game/game_end' => 'game#end', as: :game_end
+  get 'team' => 'team#index', as: :team
+  get 'team_keys' => 'team#keys', as: :team_keys
+  post 'team_test_key' => 'team#test_key', as: :team_test_key
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

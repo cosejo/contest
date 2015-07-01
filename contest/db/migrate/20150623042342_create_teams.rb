@@ -3,7 +3,7 @@ class CreateTeams < ActiveRecord::Migration
     create_table :teams do |t|
   	  t.string :name
       t.integer :points
-      t.boolean :keys
+      t.integer :keys
       t.timestamps
     end
   end
