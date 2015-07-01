@@ -6,10 +6,13 @@ class GameController < ApplicationController
 	end
 
 	def end
-		game = Game.find(params[:id])
+		puts '$^&*&^%$#$^&^'
+		puts params[:pTeamsInfo]
+		puts '$^&*&^%$#$^&^'
+		game = Game.find(params[:id]);
 		game.disabled = true
 		game.save
-		redirect_to dice_url()
 	end
 
+	skip_before_filter  :verify_authenticity_token
 end

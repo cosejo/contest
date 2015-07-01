@@ -19,8 +19,7 @@
               <% for team in @teams %>
                 <div class="col-md-3">
                     <div class="team-type-background-border team-type-<%= team.id %>">
-                      
-                      <%= link_to "", game_url(id: team.id), :id => "team-#{team.id}",:class => "team-link", :method => :get %>
+                      <%= link_to "", game_url(id: team.id), :id => "#{team.id}",:class => "team-link", :method => :get %>
 
                     </div>
                 </div>
@@ -29,8 +28,7 @@
         </div>
       </div>
       
-      <%= button_to "Finalizar", game_end_url(id: @game.id), :id => "open-contacts-dialog-btn",
-      :class => "btn btn-primary btn-lg btn-block back-button", :method => :get %>
+      <input game="<%= @game.id%>" class="btn btn-primary btn-lg btn-block back-button" id="end-game-button" type="submit" value="Finalizar">
 
           	<%= button_to "Atrás", game_type_url(id: @game.game_type_id), :id => "open-contacts-dialog-btn",
       :class => "btn btn-primary btn-lg btn-block back-button", :method => :get %>

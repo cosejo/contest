@@ -8,6 +8,7 @@ var MAX_POINTS = 100,
 
 $( document ).ready(function() {
     $('.team-link').click(teamLinkOnClick);
+    $('#end-game-button').click(endGame);
 });
 
 function teamLinkOnClick(e){
@@ -19,4 +20,38 @@ function teamLinkOnClick(e){
 		TEAM_INDEX = 0;
 	}
 	return false;
+}
+
+function endGame(e){
+	e.preventDefault();
+	teamsInfo = getTeamsPoints();
+	$.ajax({
+			url: './game_end',
+			method: 'post',
+			data: {'pTeamsInfo':teamsInfo, 'id':$(this).attr('game')},
+			beforeSend: function(){
+				// $("#loading").fadeIn(100);
+    //   			$("#loading-background").fadeIn(100);
+			},
+			success: function(data) {
+				// if (data == null){
+			 //    	showErrorMessage("Ha ocurrido un error. Intente de nuevo");
+			 //    	$("#loading").fadeOut(100);
+				// 	$("#loading-background").fadeOut(100);
+		  //   	}
+		    },
+		    complete: function(){
+
+		    }
+		});
+}
+
+function getTeamsPoints(){
+	teams = $('.team-link');
+	teams_info = [];
+	for (var i = 0; i < teams.length; i++) {
+		team = teams[i];
+		teams_info.push({'id':team.id, 'points':$(team).attr('points')});
+	};
+	return teams_info;
 }

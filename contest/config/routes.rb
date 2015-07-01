@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'dice/throw' => 'dice#throw', as: :dice_throw
   get 'game_type/:id' => 'game_type#index', as: :game_type
   get 'game/:id' => 'game#index', as: :game
-  get 'game/end/:id' => 'game#end', as: :game_end
+  post 'game/game_end' => 'game#end', as: :game_end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
