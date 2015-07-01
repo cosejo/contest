@@ -34,14 +34,7 @@ function endGame(e){
     //   			$("#loading-background").fadeIn(100);
 			},
 			success: function(data) {
-				// if (data == null){
-			 //    	showErrorMessage("Ha ocurrido un error. Intente de nuevo");
-			 //    	$("#loading").fadeOut(100);
-				// 	$("#loading-background").fadeOut(100);
-		  //   	}
-		    },
-		    complete: function(){
-
+				$('#back-button').click();
 		    }
 		});
 }
