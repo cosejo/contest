@@ -2,19 +2,12 @@
     <div class="throw-button-container">
 	<div class="row">
 		<div class="span4">
-	    	<div class="roulette_container" >
-				<div class="roulette" >
-					<%= image_tag("batman_mini_flag.png") %>
-					<%= image_tag("green_lantern_mini_flag.png") %>
-					<%= image_tag("the_flash_mini_flag.jpg") %>
-					<%= image_tag("captain_america_mini_flag.png") %>
-				</div>
-			</div>
+		<canvas id="canvas" width="500" height="500"></canvas>
 			<div class="btn_container">
 				<p>
 		<!-- 	<%= button_to "Lanzar", dice_throw_url(), :id => "open-contacts-dialog-btn",
 	      :class => "btn btn-2 btn-2i start", :method => :get %> -->
-	      <input class="btn btn-2 btn-2i start" id="open-contacts-dialog-btn" type="submit" value="Lanzar">
+	      <input class="btn btn-2 btn-2i start" id="spin" type="submit" value="Lanzar">
 				</p>
 			</div>
 		</div>

@@ -6,6 +6,8 @@ class DiceController < ApplicationController
 	end
 
 	def throw
-		redirect_to game_type_url(id: @@dice.throw)
+		respond_to do |format|
+      		format.json {render json: {response:game_type_url(id: @@dice.throw)}}
+    	end
 	end
 end
